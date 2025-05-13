@@ -11,7 +11,7 @@
 import { test, expect } from '@playwright/test';
 
 test.describe("[UI] Страница 'Login'", () => {
-  test.only("Проверить страницу авторизации", async({page}) => {
+  test("Проверить страницу авторизации", async({page}) => {
     await page.goto("https://anatoly-karpovich.github.io/aqa-course-project/#");
     await page.locator("#emailinput").fill("test@gmail.com");
     await page.locator("#passwordinput").fill("12345678");
